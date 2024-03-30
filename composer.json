@@ -1,0 +1,30 @@
+{
+    "name": "zonuexe/polyfill-mb_clcfirst",
+    "description": "A polyfill backporting some mb_ucfirst and mb_lcfirst functions to lower PHP versions",
+    "keywords": ["polyfill", "shim", "compatibility", "portable", "mb_ucfirst", "mb_lcfirst"],
+    "license": "MIT",
+    "require": {
+        "php": ">=7.1",
+        "symfony/polyfill-php80": "^1.29"
+    },
+    "require-dev": {
+        "phpbench/phpbench": "^1.2",
+        "phpstan/phpstan": "^1.10",
+        "phpunit/phpunit": "^7.5 || ^8.5 || ^9.6 || ^10.5",
+        "yoast/phpunit-polyfills": "^2.0"
+    },
+    "autoload": {
+        "files": ["functions.php"],
+        "psr-4": {
+            "zonuexe\\Polyfill\\MbLucfirst\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "zonuexe\\Polyfill\\MbLucfirst\\": "tests"
+        }
+    },
+    "config": {
+        "sort-packages": true
+    }
+}
