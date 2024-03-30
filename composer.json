@@ -20,6 +20,7 @@
         }
     },
     "autoload-dev": {
+        "classmap": ["benchmark"],
         "psr-4": {
             "zonuexe\\Polyfill\\MbLucfirst\\": "tests"
         }
